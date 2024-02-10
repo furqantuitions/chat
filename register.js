@@ -5,7 +5,7 @@ function register() {
     firebase.auth().createUserWithEmailAndPassword(regEmail, regPassword)
       .then(function(userCredential) {
         // Registration successful
-        alert("Registration successful!");
+        alert("Registration successful! <a href="login.html" >Login</a>) to continue;
         
         // Get the user's unique ID
         var user = userCredential.user;
