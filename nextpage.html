@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Data</title>
+</head>
+<body>
+    <h1>User Data</h1>
+    <div id="userDataDisplay"></div>
+   <form id="messageForm">
+    <label for="receiverEmail">Receiver's Email:</label><br>
+    <input type="text" id="receiverEmail" name="receiverEmail"><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message"></textarea><br><br>
+    <input type="button" value="Send" onclick="sendMessage()">
+  </form>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="next.js"></script>
+    
+</body>
+</html>
