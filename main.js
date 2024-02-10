@@ -10,7 +10,7 @@ function login() {
             // Store userEmail in local storage
             localStorage.setItem('userEmail', userEmail);
             // Redirect to the next page
-            window.location.href = "nextPage.html";
+            window.location.href = "nextpage.html";
         })
       .catch(function(error) {
         // Handle login error
