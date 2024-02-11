@@ -5,7 +5,8 @@ function register() {
     firebase.auth().createUserWithEmailAndPassword(regEmail, regPassword)
       .then(function(userCredential) {
         // Registration successful
-        alert("Registration successful! <a href="login.html" >Login</a>) to continue;
+        alert("Registration successful! You will now be redirected to the login page.");
+        window.location.href = "index.html";
         
         // Get the user's unique ID
         var user = userCredential.user;
@@ -23,4 +24,4 @@ function register() {
         // Handle registration error
         alert("Error: " + error.message);
       });
-  }
+}
